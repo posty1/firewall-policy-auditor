@@ -1,0 +1,6 @@
+name,source,destination,service,action,enabled,owner,expires
+temporary-open,any,any,any,allow,true,,2025-12-31
+web-ingress,10.20.0.0/16,172.16.10.10,tcp/443,allow,true,platform-security,2027-01-31
+web-ingress-copy,10.20.0.0/16,172.16.10.10,tcp/443,allow,true,platform-security,2027-01-31
+old-admin,10.1.2.0/24,172.16.1.10,tcp/22,allow,false,network-security,2024-06-01
+deny-rest,any,any,any,deny,true,network-security,
