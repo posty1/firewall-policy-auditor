@@ -1,0 +1,11 @@
+[project]
+name = "firewall-policy-auditor"
+version = "0.1.0"
+description = "Audit exported firewall policies for risky, stale, duplicate, and shadowed rules"
+requires-python = ">=3.10"
+
+[project.scripts]
+firewall-audit = "firewall_auditor.cli:main"
+
+[tool.ruff]
+line-length = 100
